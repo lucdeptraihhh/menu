@@ -88,16 +88,12 @@ print("\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNhập Số \0
 print("\033[1;31m────────────────────────────────────────────────────────────")
 chon = float(input('\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNhập Số \033[1;37m: \033[1;33m'))
 if chon == 1.1:
-    url = 'https://raw.githubusercontent.com/lucdeptraihhh/menu/refs/heads/main/2.php'
-    php_code = requests.get(url).text
-
-    # Lưu file PHP vào máy
-    with open("2.php", "w") as f:
-        f.write(php_code)
-
-    # Chạy file PHP
+    url = 'https://raw.githubusercontent.com/lucdeptraihhh/menu/refs/heads/main/4_tdsfb.py'
+    py_code = requests.get(url).text
+    with open("4_tdsfb.py", "w") as f:
+        f.write(py_code)
     print(trang + "ĐANG CHECK LIVE....")
-    os.system("php 2.php")
+    os.system("python 4_tdsfb.py")
 if chon == 1.2:
     url = 'https://raw.githubusercontent.com/lucdeptraihhh/menu/refs/heads/main/5.php'
     php_code = requests.get(url).text
