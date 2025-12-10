@@ -3,6 +3,10 @@ import requests,json
 from time import sleep
 from datetime import datetime, timedelta
 import base64,requests,os
+import json
+from datetime import datetime, timedelta
+import json,requests,time
+from time import strftime
 #màu
 xnhac = "\033[1;36m"
 do = "\033[1;31m"
@@ -46,8 +50,7 @@ def banner():
 # =======================[ NHẬP KEY ]=======================
 os.system("cls" if os.name == "nt" else "clear")
 banner()
-import json,requests,time
-from time import strftime
+
 print("\033[1;37m╔═════════════════════╗")
 print("\033[1;37m║  \033[1;33mTOOL TRAO ĐỔI SUB  \033[1;37m║")
 print("\033[1;37m╚═════════════════════╝")
@@ -182,14 +185,14 @@ if chon == 3.3:
 	 print(trang + "ĐANG CHECK LIVE....")
 	 os.system("php 36.php")
 if chon == 3.4:
-	 url = 'https://raw.githubusercontent.com/lucdeptraihhh/menu/refs/heads/main/4.php'
-	 php_code = requests.get(url).text
+	 url = 'https://raw.githubusercontent.com/lucdeptraihhh/menu/refs/heads/main/spamsms.py'
+	 py_code = requests.get(url).text
 	
-	 with open("4.php","w") as f:
-	     f.write(php_code)
+	 with open("spamsms.py","w") as f:
+	     f.write(py_code)
 	   
 	 print(trang + "ĐANG CHECK LIVE....")
-	 os.system("php 4.php")
+	 os.system("python spamsms.py")
 if chon == 3.5:
 	 url = 'https://raw.githubusercontent.com/lucdeptraihhh/menu/refs/heads/main/35.php'
 	 php_code = requests.get(url).text
